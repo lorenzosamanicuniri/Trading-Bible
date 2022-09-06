@@ -1,0 +1,89 @@
+/*charts related styles*/
+
+.rechartsSurface {
+  padding: 16px;
+  height: 280px;
+}
+
+.rechartsSurface > div > svg {
+  overflow: visible;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.customLabel {
+  position: relative;
+  color: #9a9595;
+  font-size: 16px;
+  width: 120px;
+  border-top: 1px solid #aaaaaa;
+  padding: 12px 10px 4px 10px;
+  overflow: visible;
+}
+
+.customLabel2 {
+  position: relative;
+  color: #9a9595;
+  font-size: 16px;
+  width: 144px;
+  padding: 12px 10px 4px 10px;
+  overflow: visible;
+}
+
+.customLabel2:after {
+  position: absolute;
+  left: -1px;
+  top: -6px;
+  right: 0;
+  background-image: url("/svg/covid-arrow.svg");
+  border-radius: 4px;
+  content: "";
+  height: 14px;
+  width: 100%;
+}
+
+.customLabel:after {
+  position: absolute;
+  right: 2px;
+  top: -7px;
+  background: #aaaaaa;
+  border-radius: 4px;
+  width: 1px;
+  content: "";
+  height: 8px;
+  transform: rotate(-45deg);
+}
+
+.customLabel::before {
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  background: #aaaaaa;
+  border-radius: 4px;
+  width: 1px;
+  content: "";
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.labelWrapper {
+  overflow: visible;
+}
+
+.legendList {
+  margin: 50px -20px 0 -20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.legendHeading {
+  font-weight: 700;
+}
+
+.legendListItem {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
